@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()  {
+	float nota1, nota2, media;
+	char aluno[20];
+	int faltas;
+
+	printf("Digite o nome do aluno:\n ");
+	scanf("%s", &aluno);
+	
+	printf("\n Digite a quantidade de faltas do aluno:\n ");
+	scanf("%d", &faltas);
+	  
+    printf("\n Digite a primeira nota:\n ");
+	scanf("%f", &nota1);
+	
+	printf("\n Digite a segunda nota:\n ");
+	scanf("%f", &nota2);
+	
+	media = (nota1+nota2) / 2;
+	
+    if(media>7){
+        printf("\n O aluno: %s", aluno);
+        printf("\n FOI APROVADO POR MEDIA!!!");
+    }else{
+        printf("\n O aluno: %s", aluno);
+        printf("\n FOI REPROVADO POR MEDIA!!!");
+    }
+  
+    printf("\n"); 
+	
+	if(faltas>3){
+		printf("\n E FOI ");
+		printf("\n REPROVADO POR FALTAS");
+	}else{
+		printf("\n MAS ");
+		printf("\n COMPARECEU AS AULAS");
+	}
+
+}
+
