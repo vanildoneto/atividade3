@@ -31,7 +31,7 @@ int main()  {
     printf("\n"); 
 	
 	if(faltas>3){
-		printf("\n E FOI ");
+		printf("\n E ");
 		printf("\n REPROVADO POR FALTAS");
 	}else{
 		printf("\n MAS ");
